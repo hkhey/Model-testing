@@ -64,3 +64,7 @@ Load testing with Locust helps evaluate the performance of the deployed models.
 - Install Locust and prepare a file to simulate user behavior.
 - Test the APIs for the different deployment methods.
 - Analyze the performance metrics to determine the most efficient deployment strategy.
+  
+## Comparison
+It appears that the first test (TFX-based FastAPI) might be handling a higher load (as indicated by the higher RPS) but also shows higher latency (potentially worse performance if the response time is critical). In contrast, the second test (regular FastAPI) seems to have lower latency but also lower RPS, which might indicate it's not handling as many requests per second but is responding faster.
+<img width="633" alt="Comparison" src="https://github.com/hkhey/Model-testing/assets/76151779/312150ad-d257-486b-9452-8ed4be8a15f3">
